@@ -14,12 +14,12 @@ int main(int argc, char *argv[]){
     int W = 64, T = 20, c;
     float C = 2.0;
 
-    while ((c = getopt(argc, argv, "c:w:t:h")) >= 0) {
+    while ((c = getopt(argc, argv, "c:w:t:v")) >= 0) {
         
         if (c == 'w') W = atoi(optarg);
         else if (c == 't') T = atoi(optarg);
         else if (c == 'c') C = atof(optarg);
-        else if (c == 'h'){
+        else if (c == 'v'){
         	fprintf(stderr, "Version: %s\n",  VERSION);
         	return 0;
         }
