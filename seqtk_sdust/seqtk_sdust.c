@@ -58,10 +58,10 @@ int main(int argc, char *argv[]){
                 
                 int j;
                 for (j = location[0]; j < location[1]; ++j) kseq->seq.s[j] = 'N';
-                if( (float)sum / kseq->seq.l < C ) print_seq(kseq);
                
             }
-            
+            if( (float)sum / kseq->seq.l < C ) print_seq(kseq);
+           
 
             free(r);
         }
